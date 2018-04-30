@@ -28,9 +28,18 @@ public class MusicDownloads {
      * - no changes were made to downloadList.
      */
     public DownloadInfo getDownLoadInfo(String title) {
+        /*
         for (DownloadInfo dl : downloadList) {
             if (dl.getTitle().equals(title)) {
                 return dl;
+            }
+        }
+        return null;
+        */
+        for (int i = 0; i < downloadList.size(); i++) {
+            DownloadInfo cur = downloadList.get(i);
+            if (cur.getTitle().equals(title)) {
+                return cur;
             }
         }
         return null;
@@ -60,6 +69,17 @@ public class MusicDownloads {
                 getDownLoadInfo(title).incrementTimesDownloaded();
             }
         }
+
+
+        for (int i = 0; i < titles.size(); i++) {
+            if (getDownLoadInfo(titles.get(i)) == null) {
+                downloadList.add(new DownloadInfo(titles.get(i)));
+            } else {
+                getDownLoadInfo(titles.get(i)).incrementTimesDownloaded();
+            }
+        }
+
+
     }
 
     public String toString() {

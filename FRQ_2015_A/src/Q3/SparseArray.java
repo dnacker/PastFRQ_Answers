@@ -44,17 +44,13 @@ public class SparseArray {
      * Precondition: 0  col < getNumCols()
      */
     public void removeColumn(int col) {
-        int times = entries.size();
-        int index = 0;
-        for (int i = 0; i < times; i++) {
-            SparseArrayEntry entry = entries.get(index);
-            if (entry.getCol() == col) {
-                entries.remove(index);
-            } else if (entry.getCol() > col) {
-                entries.remove(index);
-                entries.add(new SparseArrayEntry(entry.getRow(), entry.getCol() - 1, entry.getValue()));
-            } else {
-                index++;
+        for (int i = entries.size() - 1; i >= 0; i--) {
+            SparseArrayEntry entry = entries.get(i);
+            if (entry.getCol() >= col) {
+                entries.remove(i);
+                if (entry.getCol() > col) {
+                    entries.add(new SparseArrayEntry(entry.getRow(), entry.getCol() - 1, entry.getValue()));
+                }
             }
         }
         numCols--;

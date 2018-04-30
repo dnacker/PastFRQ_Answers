@@ -22,16 +22,16 @@ public class FuelDepot {
      * @return index of the next tank to fill.
      */
     public int nextTankToFill(int threshold) {
-        int index = filler.getCurrentIndex();
+        int indexOfSmallest = filler.getCurrentIndex();
         int smallest = threshold;
         for (int i = 0; i < tanks.size(); i++) {
-            int currentTankLevel = tanks.get(i).getFuelLevel();
-            if (currentTankLevel < smallest) {
-                smallest = currentTankLevel;
-                index = i;
+            int currentLevel = tanks.get(i).getFuelLevel();
+            if (currentLevel <= smallest) {
+                indexOfSmallest = i;
+                smallest = currentLevel;
             }
         }
-        return index;
+        return indexOfSmallest;
     }
 
     /**

@@ -4,7 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 /**
- * Created by david on 1/23/2017.
+ * Tests for question 3.
  */
 public class TestHorseBarn {
 
