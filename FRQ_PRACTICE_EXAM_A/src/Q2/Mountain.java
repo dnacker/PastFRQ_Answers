@@ -36,6 +36,7 @@ public class Mountain {
         return peak != -1 && isIncreasing(array, peak) && isDecreasing(array, peak);
     }
 
+    /*
     public static void main(String[] args) {
         System.out.println(getPeakIndex(new int[]{11, 22, 33, 22, 11}));
         System.out.println(getPeakIndex(new int[]{11, 22, 11, 22, 11}));
@@ -52,4 +53,5 @@ public class Mountain {
         System.out.println(isMountain(new int[]{3, 2, 1}));
 
     }
+    */
 }

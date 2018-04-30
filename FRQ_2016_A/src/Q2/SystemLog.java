@@ -40,6 +40,7 @@ public class SystemLog {
         return res;
     }
 
+    /*
     public static void main(String[] args) {
         List<String> messages = new ArrayList<String>();
         messages.add("CLIENT3:security alert - repeated login failures");
@@ -52,4 +53,5 @@ public class SystemLog {
         System.out.println(log.removeMessages("disk"));
         System.out.println(log);
     }
+    */
 }

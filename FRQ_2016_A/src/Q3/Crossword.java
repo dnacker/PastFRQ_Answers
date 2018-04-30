@@ -64,6 +64,7 @@ public class Crossword {
         return result;
     }
 
+    /*
     public static void main(String[] args) {
         boolean[][] test = {{true, false, false, true, true, true, false, false, false},
                 {false, false, false, false, true, false, false, false, false},
@@ -75,4 +76,5 @@ public class Crossword {
         Crossword cw = new Crossword(test);
         System.out.println(cw);
     }
+    */
 }

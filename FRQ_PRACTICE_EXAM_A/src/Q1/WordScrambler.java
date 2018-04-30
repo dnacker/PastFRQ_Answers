@@ -12,7 +12,7 @@ public class WordScrambler {
         scrambleWords = mixedWords(wordArr);
     }
 
-    private String recombine(String word1, String word2) {
+    public static String recombine(String word1, String word2) {
         return word1.substring(0, word1.length()/2) + word2.substring(word2.length()/2);
     }
 
@@ -47,9 +47,11 @@ public class WordScrambler {
         return Arrays.toString(scrambleWords);
     }
 
+    /*
     public static void main(String[] args) {
         String[] words = {"apple", "pear", "this", "cat"};
         WordScrambler scrambler = new WordScrambler(words);
         System.out.println(scrambler);
     }
+    */
 }

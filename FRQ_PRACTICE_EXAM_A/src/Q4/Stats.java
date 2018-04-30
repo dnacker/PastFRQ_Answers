@@ -41,6 +41,7 @@ public class Stats {
         return scoreList.toString();
     }
 
+    /*
     public static void main(String[] args) {
         int[] scores = new int[33];
         int index = 0;
@@ -70,6 +71,6 @@ public class Stats {
         System.out.println(myStats);
         myStats.record(3);
         System.out.println(myStats);
-
     }
+    */
 }

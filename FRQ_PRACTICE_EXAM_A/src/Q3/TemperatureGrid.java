@@ -45,6 +45,7 @@ public class TemperatureGrid {
         return res;
     }
 
+    /*
     public static void main(String[] args) {
         TemperatureGrid temps = new TemperatureGrid(new double[][]{{95.5, 100.0, 100.0, 100.0, 100.0, 110.3},
                                                                     {0.0, 50.0, 50, 50, 50, 0},
@@ -56,4 +57,5 @@ public class TemperatureGrid {
         System.out.println(temps);
         System.out.println(within);
     }
+    */
 }
