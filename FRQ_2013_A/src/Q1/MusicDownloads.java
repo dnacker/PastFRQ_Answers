@@ -69,17 +69,6 @@ public class MusicDownloads {
                 getDownLoadInfo(title).incrementTimesDownloaded();
             }
         }
-
-
-        for (int i = 0; i < titles.size(); i++) {
-            if (getDownLoadInfo(titles.get(i)) == null) {
-                downloadList.add(new DownloadInfo(titles.get(i)));
-            } else {
-                getDownLoadInfo(titles.get(i)).incrementTimesDownloaded();
-            }
-        }
-
-
     }
 
     public String toString() {
