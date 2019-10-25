@@ -14,7 +14,7 @@ public class FrogSimulation {
     private int[] hops;
     private int step;
 
-    /** Constructs a FrogSimulation where dist is the distanct, in inches from the starting
+    /** Constructs a FrogSimulation where dist is the distance, in inches from the starting
      * position to the goal, and numHops is the maximum number of hops allowed to reach the goal.
      * Precondition: dist > 0; numHops > 0
      */
@@ -26,7 +26,7 @@ public class FrogSimulation {
         step = 0;
     }
 
-    /** Returns an integer representing the distance, in inches, to be moved when the frop hops.
+    /** Returns an integer representing the distance, in inches, to be moved when the frog hops.
      */
     private int hopDistance() {
         return hops[step++];
