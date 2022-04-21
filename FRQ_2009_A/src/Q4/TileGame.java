@@ -49,26 +49,4 @@ public class TileGame {
     public String toString() {
         return board.toString();
     }
-
-    /*
-    public static void main(String[] args) {
-        NumberTile first = new NumberTile(new int[]{4, 3, 7, 4});
-        NumberTile second = new NumberTile(new int[]{6, 4, 3, 3});
-        NumberTile third = new NumberTile(new int[]{1, 2, 3, 4});
-        NumberTile fourth = new NumberTile(new int[]{3, 2, 5, 2});
-        NumberTile fifth = new NumberTile(new int[]{5, 9, 2, 2});
-        ArrayList<NumberTile> myBoard = new ArrayList<NumberTile>();
-        myBoard.add(first);
-        myBoard.add(second);
-        myBoard.add(third);
-        myBoard.add(fourth);
-        myBoard.add(fifth);
-        TileGame test = new TileGame(myBoard);
-        System.out.println(test.board);
-        NumberTile toInsert = new NumberTile(new int[]{4, 2, 9, 2});
-        toInsert.rotate();
-        test.insertTile(toInsert);
-        System.out.println(test);
-    }
-    */
 }

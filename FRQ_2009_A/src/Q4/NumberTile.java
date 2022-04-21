@@ -32,18 +32,4 @@ public class NumberTile {
     public String toString() {
         return Arrays.toString(numbers);
     }
-
-    public boolean equals(Object o) {
-        if (o instanceof NumberTile) {
-            NumberTile other = new NumberTile(((NumberTile) o).numbers);
-            boolean equal = false;
-            for (int i = 0; i < 4; i++) {
-                if (Arrays.equals(other.numbers, numbers)) {
-                    equal = true;
-                }
-                other.rotate();
-            }
-        }
-        return false;
-    }
 }
