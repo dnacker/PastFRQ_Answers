@@ -39,6 +39,7 @@ public class TestWordScrambler {
     @Test
     public void testMixedWords() {
         WordScrambler ws = new WordScrambler(words);
-        Assert.assertEquals(ans, ws.toString());
+        String[] expected = {"ab", "ba", "cdd", "dcc"};
+        Assert.assertArrayEquals(expected, ws.getScrambledWords());
     }
 }
